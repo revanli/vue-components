@@ -3,14 +3,15 @@
     <div class="balls item">
       <loading type="balls" color="#FF4959" :size="{ width: '40px', height: '40px'}"></loading>
     </div>
-    <!-- <h2>spiningDubbles</h2>
-    <vue-loading type="spiningDubbles" color="#d9544e" :size="{ width: '50px', height: '50px' }"></vue-loading> -->
+    <div class="item">
+      <vue-count-to :end="3000" :duration="2.5" :options="{useEasing: true, useGrouping: true, separator: ',', decimal: '.', prefix: '', suffix: ''}"></vue-count-to>
+    </div>
   </div>
 </template>
 
 <script>
 import loading from '@/components/loading'
-// import vueLoading from 'vue-loading-template'
+import vueCountTo from '@/components/vue-count-to'
 export default {
   name: 'main',
   data () {
@@ -18,8 +19,8 @@ export default {
     }
   },
   components: {
-    loading
-    // vueLoading
+    loading,
+    vueCountTo
   }
 }
 </script>

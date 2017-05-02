@@ -1,6 +1,6 @@
 # vue-source
 
-> A Vue.js project
+> A Vue.js project, test vue components
 
 ## Build Setup
 

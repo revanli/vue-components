@@ -1,8 +1,8 @@
 <template>
   <div class="main">
-    <!-- <div class="balls item">
+    <div class="balls item">
       <loading type="balls" color="#FF4959" :size="{ width: '40px', height: '40px'}"></loading>
-    </div> -->
+    </div>
     <div class="item">
       <vue-count-to :end="2017" :duration="5" :options="{useEasing: true, useGrouping: true, separator: ',', decimal: '.', prefix: '', suffix: ''}"></vue-count-to>
     </div>

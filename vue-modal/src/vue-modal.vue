@@ -122,7 +122,7 @@ export default {
   border-bottom: 1px solid #e5e5e5;
 }
 /* body */
-.modal-body {
+.modal-body { 
   font-size: 14px;
   text-align: left;
   padding: .15rem;

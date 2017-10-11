@@ -145,7 +145,6 @@ export default {
       let roundedCanvas;
 
       // crop
-      document.querySelector('.crop-loading').style.display = 'block';
       setTimeout(function () {
         croppedCanvas = self.cropper.getCroppedCanvas();
         // Round
@@ -203,6 +202,7 @@ export default {
 
       // 这里写上传逻辑
 
+      document.querySelector('.crop-loading').style.display = 'block';
       // 模拟上传后成功的处理
       window.setTimeout(function () {
         document.querySelector('.crop-loading').style.display = 'none';

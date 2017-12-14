@@ -6,6 +6,13 @@ import router from './router'
 
 Vue.config.productionTip = false
 
+// import VSlider from './components/vue-slider/index'
+
+import Toast from './components/vue-utils/utils'
+
+// Vue.use(VSlider)
+Vue.use(Toast)
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

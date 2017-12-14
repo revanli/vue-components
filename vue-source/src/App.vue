@@ -1,16 +1,27 @@
 <template>
   <div id="app">
-    <router-view></router-view>
+    <button @click="showToast">SHOW TOAST</button>
+    <button @click="showIndicator">SHOW INDICATOR</button>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'app'
+  name: 'app',
+  methods: {
+    showToast () {
+      this.$toast('hahahaha')
+    },
+    showIndicator () {
+      this.$indicator('emememem')
+    }
+  }
 }
 </script>
 
 <style>
+@import url(./assets/css/utils.css);
+
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
